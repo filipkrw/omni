@@ -6,7 +6,6 @@ export default defineConfig({
   manifest: {
     name: "Omni",
   },
-  browser: "firefox",
   vite: () => ({
     plugins: [tailwindcss()],
   }),

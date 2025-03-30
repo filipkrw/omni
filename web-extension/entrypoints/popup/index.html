@@ -10,10 +10,12 @@
 </head>
 
 <body class="p-6 bg-black text-white">
-  <div x-data="counter" class="w-44 h-24 flex gap-3 justify-center items-center">
+  <div x-data="counter" class="w-[500px] flex flex-col gap-3 justify-center items-center">
     <button x-on:click="increment"
       class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 transition-colors duration-75 rounded-lg">Increment</button>
     <span x-text="count">0</span>
+
+    <pre x-text="snapshot" class="text-xs break-all max-w-[480px] break-words"></pre>
   </div>
 
   <script type="module" src="./main.ts"></script>
